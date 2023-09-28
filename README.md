@@ -21,9 +21,6 @@ The Vendée Globe is an iconic solo non-stop round-the-world sailboat race. This
 ## Challenge Overview <a name="challenge-overview"></a>
 The challenge was to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
 
-### Key Objectives:
-- **Lambda Architecture:** Implement a Lambda Architecture to process telemetry data and create a PowerBI dashboard for real-time tracking.
-
 ## Sailing Boat Simulator <a name="sailing-boat-simulator"></a>
 Used a Python-based sailing boat simulator to generate telemetry data for representing the boats.
 
