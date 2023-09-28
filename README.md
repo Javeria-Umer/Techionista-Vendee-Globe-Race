@@ -7,12 +7,13 @@
 2. [Challenge Overview](#challenge-overview)
 3. [Architecture](#architecture)
    1. [Event Hub Configuration](#event-hub-configuration)
-   2. [Azure Lambda Architecture](#azure-lambda-architecture)
-   3. [Data Storage](#data-storage)
-   4. [PowerBI Dashboard](#powerbi-dashboard)
+   2. [Sailing Boat Simulator](#sailing-boat-simulator)
+   3. [Azure Lambda Architecture](#azure-lambda-architecture)
+   4. [Data Storage](#data-storage)
+   5. [PowerBI Dashboard](#powerbi-dashboard)
 4. [Boat Ranking](#boat-ranking)
 5. [Conclusion](#conclusion)
-
+   
 ## Introduction <a name="introduction"></a>
 The Vendée Globe is an iconic solo non-stop round-the-world sailboat race. This business case involves processing telemetry data from racing boats during this challenging event using Microsoft Azure technologies.
 
@@ -31,6 +32,9 @@ Challenge was to create a cloud-based Lambda Architecture on Azure to process te
 
 ### Event Hub Configuration <a name="event-hub-configuration"></a>
 Configured an Event Hub and Namespace to ingest telemetry data. 
+
+### Sailing Boat Simulator <a name="sailing-boat-simulator"></a>
+Used a Python-based sailing boat simulator to generate telemetry data for representing the boats.
 
 ### Azure Lambda Architecture <a name="azure-lambda-architecture"></a>
 Lambda Architecture includes:
