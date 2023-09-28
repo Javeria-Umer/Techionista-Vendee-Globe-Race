@@ -19,7 +19,7 @@ The Vendée Globe is an iconic solo non-stop round-the-world sailboat race. This
 ![Vendée Globe Race](image-reference-for-race-image.png)
 
 ## Challenge Overview <a name="challenge-overview"></a>
-Your task is to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
+Challenge was to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
 
 ### Key Objectives:
 - Implement a Lambda Architecture to process telemetry data.
@@ -30,20 +30,19 @@ Your task is to create a cloud-based Lambda Architecture on Azure to process tel
 ## Architecture <a name="architecture"></a>
 
 ### Event Hub Configuration <a name="event-hub-configuration"></a>
-We configured an Event Hub to ingest telemetry data. No detailed process description is included here.
+Configured an Event Hub and Namespace to ingest telemetry data. 
 
 ### Azure Lambda Architecture <a name="azure-lambda-architecture"></a>
-Our Lambda Architecture includes:
+Lambda Architecture includes:
 - Event Hub for real-time data ingestion.
 - Stream Analytics Job for real-time processing.
 - Synapse Analytics Workspace with Serverless SQL Pool for batch data processing.
-- No notebooks were used in this setup.
 
 ### Data Storage <a name="data-storage"></a>
-Data is stored in a storage service of your choice (Data Lake, SQL Database, Cosmos DB, or Synapse Analytics Workspace) for batch processing.
+Data is stored in Data Lake for batch processing.
 
 ### PowerBI Dashboard <a name="powerbi-dashboard"></a>
-Our PowerBI dashboard features:
+PowerBI dashboard features:
 - A world map displaying boat positions.
 - A table ranking teams by their race positions.
 - A horizontal bar chart showcasing average boat speeds.
