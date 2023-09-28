@@ -5,51 +5,34 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Challenge Overview](#challenge-overview)
-3. [Architecture](#architecture)
+3. [Sailing Boat Simulator](#sailing-boat-simulator)
+4. [Lambda Architecture](#lambda-architecture)
    1. [Event Hub Configuration](#event-hub-configuration)
-   2. [Sailing Boat Simulator](#sailing-boat-simulator)
-   3. [Azure Lambda Architecture](#azure-lambda-architecture)
-   4. [Data Storage](#data-storage)
-   5. [PowerBI Dashboard](#powerbi-dashboard)
-4. [Boat Ranking](#boat-ranking)
-5. [Conclusion](#conclusion)
-   
+   2. [Data Storage](#data-storage)
+   3. [PowerBI Dashboard](#powerbi-dashboard)
+5. [Boat Ranking](#boat-ranking)
+6. [Conclusion](#conclusion)
+
 ## Introduction <a name="introduction"></a>
 The Vendée Globe is an iconic solo non-stop round-the-world sailboat race. This business case involves processing telemetry data from racing boats during this challenging event using Microsoft Azure technologies.
 
 ![Vendée Globe Race](image-reference-for-race-image.png)
 
 ## Challenge Overview <a name="challenge-overview"></a>
-Challenge was to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
+The challenge was to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
 
 ### Key Objectives:
-- Implement a Lambda Architecture to process telemetry data.
-- Display boat positions on a world map in real-time.
-- Rank racing teams by their current positions.
-- Utilize a Python-based simulator for data injection during inter-race periods.
+- **Lambda Architecture:** Implement a Lambda Architecture to process telemetry data and create a PowerBI dashboard for real-time tracking.
 
-## Architecture <a name="architecture"></a>
-
-### Event Hub Configuration <a name="event-hub-configuration"></a>
-Configured an Event Hub and Namespace to ingest telemetry data. 
-
-### Sailing Boat Simulator <a name="sailing-boat-simulator"></a>
+## Sailing Boat Simulator <a name="sailing-boat-simulator"></a>
 Used a Python-based sailing boat simulator to generate telemetry data for representing the boats.
 
-### Azure Lambda Architecture <a name="azure-lambda-architecture"></a>
-Lambda Architecture includes:
-- Event Hub for real-time data ingestion.
-- Stream Analytics Job for real-time processing.
-- Synapse Analytics Workspace with Serverless SQL Pool for batch data processing.
-
-### Data Storage <a name="data-storage"></a>
-Data is stored in Data Lake for batch processing.
-
-### PowerBI Dashboard <a name="powerbi-dashboard"></a>
-PowerBI dashboard features:
-- A world map displaying boat positions.
-- A table ranking teams by their race positions.
-- A horizontal bar chart showcasing average boat speeds.
+## Lambda Architecture <a name="lambda-architecture"></a>
+The Lambda Architecture includes:
+- **Event Hub Configuration:** We configured an Event Hub to ingest telemetry data.
+- **Data Storage:** Data is stored in Azure Data Lake for batch processing.
+- **Batch Processing:** Synapse Analytics Workspace with Serverless SQL Pool is used for batch processing.
+- **PowerBI Dashboard:** Our PowerBI dashboard features a world map displaying boat positions, a table ranking teams by their race positions, and a horizontal bar chart showcasing average boat speeds.
 
 ## Boat Ranking <a name="boat-ranking"></a>
 - Boat ranking utilizes the Haversine formula to calculate great-circle distances.
@@ -59,5 +42,3 @@ PowerBI dashboard features:
 
 ## Conclusion <a name="conclusion"></a>
 This business case demonstrates the use of Azure technologies to process and visualize telemetry data from the Vendée Globe sailboat race. Boat ranking, real-time tracking, and data processing are key components of this solution.
-
-
