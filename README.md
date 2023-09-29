@@ -16,7 +16,7 @@
 ## Introduction <a name="introduction"></a>
 The Vendée Globe is an iconic solo non-stop round-the-world sailboat race. This business case involves processing telemetry data from racing boats during this challenging event using Microsoft Azure technologies.
 
-![Vendée Globe Race]([image-reference-for-race-image.png](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/2023-09-29%20Vendee%20globe%20route%20portugal%20map.png?raw=true))
+![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/2023-09-29%20Vendee%20globe%20route%20portugal%20map.png?raw=true)
 
 ## Challenge Overview <a name="challenge-overview"></a>
 The challenge was to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
