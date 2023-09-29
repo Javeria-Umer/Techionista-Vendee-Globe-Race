@@ -54,7 +54,7 @@ The Lambda Architecture includes:
 ## Boat Ranking <a name="boat-ranking"></a>
 Boat ranking utilizes the Haversine formula to calculate great-circle distances. It factors in latitude and longitude coordinates for accurate distance measurements. Boat positions are processed, allowing real-time ranking. Boat ranking data is visualized in the PowerBI dashboard.
 
-![Boat Ranking](image-reference-for-boat-ranking.png)
+![Boat Ranking](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20for%20boat%20ranking.png?raw=true)
 
 ## Azure Resources Used <a name="azure-resources-used"></a>
 The following Azure resources were used in this project:
