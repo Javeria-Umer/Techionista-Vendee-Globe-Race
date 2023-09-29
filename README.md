@@ -22,6 +22,7 @@
 The Vendée Globe is a solo non-stop round-the-world sailboat race known for its extreme challenges and tests of individual endurance. Founded by Philippe Jeantot in 1989, this race occurs every four years and attracts sailors from around the world. In the 9th edition, held in 2020-2021, French sailor Yannick Bestaven emerged victorious after a thrilling 80-day journey.
 
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/2023-09-29%20Vendee%20globe%20route%20portugal%20map.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 2. Foreword <a name="foreword"></a>
@@ -38,6 +39,7 @@ To start, created an Event Hub Namespace. Here are the steps:
 <br> <!-- HTML line break for spacing -->
 
 ![Configure EventHub Namespace]()
+
 <br> <!-- HTML line break for spacing -->
 
 ## 4. Getting Started - Python Simulator <a name="getting-started---python-simulator"></a>
@@ -50,12 +52,14 @@ Python sailing simulator was set up to send telemetry data every 60 seconds to o
 ### 4.2 Run the Python Sailing Simulator <a name="run-the-python-sailing-simulator"></a>
 
 ![Sailing Boat Simulator](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/simulator%20run.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 5. Challenges <a name="challenges"></a>
 Challenges were to build the Lambda Architecture in Azure, storing and processing data, calculating boat rankings, and creating a PowerBI dashboard to visualize the race.
 
 ![Project Challenge](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/project%20challenge.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 6. Lambda Architecture in Azure <a name="lambda-architecture-in-azure"></a>
@@ -68,6 +72,7 @@ With data flowing into the Event Hub, the next steps include running the stream 
 Some garbled data was observed during the simulator run. To ensure data quality, data cleaning was performed before processing and running the job. The following query was used for data cleaning:
 
 ![Data Cleaning Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20to%20clean%20data.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 8. Incoming Data After Running The Stream Analytics Job <a name="incoming-data-after-running-the-stream-analytics-job"></a>
@@ -83,23 +88,27 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 
 - **Stream Analytics Input Table:**
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20table%20after%20job%20run.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 9. Data Storage and Batch Processing <a name="data-storage-and-processing"></a>
 Synapse analytics Workspace in serverless SQL pool and Data lake is used for batch processing.
 
 ![Synapse Workspace container after job run](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/synapse%20workspace%20after%20job%20run.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 10. Created External Table <a name="creating-external-table"></a>
 Following query was used to create external table in Synapse serverless SQL Pool:
 
 ![Query for External Table](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/ext.%20table%20query.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 External Table After Running The Query:
 
 ![External Table Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/ext.%20table%20after%20query%20run.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 11. Calculated Boat Ranking <a name="calculating-boat-ranking"></a>
@@ -110,17 +119,20 @@ Used SQL query to calculate the table of teams ranked by position in the race as
 <br> <!-- HTML line break for spacing -->
 
 ![Boat Ranking Table](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/rank%20table%20in%20develop%20window.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 12. PowerBI Dashboard <a name="powerbi-dashboard"></a>
 A PowerBI dashboard displays a world map with the current location of each racing team, along with a table showing teams ranked by position in the race. Also included a table for the average current speed of boats.
 
 ![PowerBI Dashboard](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/vendee%20globe-dashboard.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 13. Azure Resources Utilized
 
 ![Resource Group](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/resource%20group.png?raw=true)
+
 <br> <!-- HTML line break for spacing -->
 
 ## 14. Conclusion <a name="conclusion"></a>
