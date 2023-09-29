@@ -78,6 +78,8 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 ## 9. Data Storage and Processing <a name="data-storage-and-processing"></a>
 In the batch-processing path, utilized SQL functions to calculate boat rankings and average speed tables in Synapse analytics Workspace serverless SQL pool.
 
+![Synapse Workspace container after job run](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/synapse%20workspace%20after%20job%20run.png?raw=true)
+
 ## 10. Calculating Boat Ranking <a name="calculating-boat-ranking"></a>
 Used SQL query to calculate the table of teams ranked by position in the race as well as the average speed of boats. Boat ranking utilizes the Haversine formula to calculate great-circle distances. It factors in latitude and longitude coordinates for accurate distance measurements. Boat positions are processed, allowing real-time ranking. Following query was used to calculate boat ranking and average speed:
 
