@@ -29,7 +29,7 @@ Used a Python-based sailing boat simulator to generate telemetry data for repres
 ## Data Cleaning <a name="data-cleaning"></a>
 To ensure data quality, data cleaning was performed before processing. Some garbled data was observed during the simulator run. The following query was used for data cleaning:
 
-![Data Cleaning Query](image-reference-for-data-cleaning.png)
+![Data Cleaning Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20to%20clean%20data.png?raw=true)
 
 ## Lambda Architecture <a name="lambda-architecture"></a>
 The Lambda Architecture includes:
