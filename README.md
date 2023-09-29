@@ -1,4 +1,4 @@
-# Techionista Vendée Globe Business Case
+# Techionista Vendée Globe Business Case 2023
 
 ## Table of Contents
 1. [Information about Vendée Globe](#information-about-vendée-globe)
