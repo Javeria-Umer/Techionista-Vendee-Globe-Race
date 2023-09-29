@@ -64,12 +64,15 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 ![Data Cleaning Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20to%20clean%20data.png?raw=true)
 
 ## 8. Incoming Data After Running The Stream Analytics Job <a name="incoming-data-after-running-the-stream-analytics-job"></a>
-Event-hub namespace:
-
+- **Event-hub namespace:**
+![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/namespace%20after%20job%20run.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
 
-Stream analytics:
+- **Stream analytics:**
+![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20after%20job%20run.png?raw=true)
+
+- **Stream Analytics Input Table:**
 
 
 ## 9. Data Storage and Processing <a name="data-storage-and-processing"></a>
