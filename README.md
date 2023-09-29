@@ -1,7 +1,5 @@
 # Vendée Globe Business Case
 
-![Vendée Globe Logo](image-reference-for-logo.png)
-
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Challenge Overview](#challenge-overview)
