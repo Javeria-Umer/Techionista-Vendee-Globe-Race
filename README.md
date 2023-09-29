@@ -21,7 +21,7 @@ The Vendée Globe is an iconic solo non-stop round-the-world sailboat race. This
 ## Challenge Overview <a name="challenge-overview"></a>
 The challenge was to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
 
-
+![Project Challenge](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/project%20challenge.png?raw=true)
 
 ## Sailing Boat Simulator <a name="sailing-boat-simulator"></a>
 Used a Python-based sailing boat simulator to generate telemetry data for representing the boats. Stream Analytics was used to ingest data from the simulator.
@@ -62,7 +62,7 @@ The following Azure resources were used in this project:
 - Azure Data Lake: For data storage.
 - Synapse Analytics Serverless SQL Pool: For batch processing.
 - Stream Analytics: For real-time boat location data from the simulator.
-![Namespace Configuration](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/namespace%20after%20job%20run.png?raw=true)
+
 ## Conclusion <a name="conclusion"></a>
 This business case demonstrates the use of Azure technologies to process and visualize telemetry data from the Vendée Globe sailboat race. Boat ranking, real-time tracking, data cleaning, and data processing are key components of this solution.
 
