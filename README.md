@@ -12,8 +12,8 @@
 7. [Stream Analytics Job](#stream-analytics-job)
 8. [Incoming Data After Running The Stream Analytics Job](#incoming-data-after-running-the-stream-analytics-job)
 9. [Data Storage and Batch Processing](#data-storage-and-batch-processing)
-10. [Creating External Table](#creating-external-table)
-11. [Calculating Boat Ranking](#calculating-boat-ranking)
+10. [Created External Table](#creating-external-table)
+11. [Calculated Boat Ranking](#calculating-boat-ranking)
 12. [PowerBI Dashboard](#powerbi-dashboard)
 13. [Conclusion](#conclusion)
 
@@ -65,12 +65,12 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 ![Data Cleaning Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20to%20clean%20data.png?raw=true)
 
 ## 8. Incoming Data After Running The Stream Analytics Job <a name="incoming-data-after-running-the-stream-analytics-job"></a>
-- **Event-hub namespace:**
+- **Event Hub Namespace:**
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/namespace%20after%20job%20run.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
 
-- **Stream analytics:**
+- **Stream Analytics:**
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20after%20job%20run.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
@@ -83,12 +83,16 @@ Synapse analytics Workspace in serverless SQL pool and Data lake is used for bat
 
 ![Synapse Workspace container after job run](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/synapse%20workspace%20after%20job%20run.png?raw=true)
 
-## 10. Creating External Table <a name="creating-external-table"></a>
+## 10. Created External Table <a name="creating-external-table"></a>
 Following query was used to create external table in Synapse serverless SQL Pool:
+
+![Query for External Table](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/ext.%20table%20query.png?raw=true)
+
+External Table After Running The Query:
 
 ![External Table Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/ext.%20table%20after%20query%20run.png?raw=true)
 
-## 10. Calculating Boat Ranking <a name="calculating-boat-ranking"></a>
+## 11. Calculated Boat Ranking <a name="calculating-boat-ranking"></a>
 Used SQL query to calculate the table of teams ranked by position in the race as well as the average speed of boats. Boat ranking utilizes the Haversine formula to calculate great-circle distances. It factors in latitude and longitude coordinates for accurate distance measurements. Boat positions are processed, allowing real-time ranking. Following query was used to calculate boat ranking and average speed:
 
 ![Query For Boat Ranking](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20for%20boat%20ranking.png?raw=true)
@@ -97,12 +101,12 @@ Used SQL query to calculate the table of teams ranked by position in the race as
 
 ![Boat Ranking Table](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/rank%20table%20in%20develop%20window.png?raw=true)
 
-## 11. PowerBI Dashboard <a name="powerbi-dashboard"></a>
+## 12. PowerBI Dashboard <a name="powerbi-dashboard"></a>
 A PowerBI dashboard displays a world map with the current location of each racing team, along with a table showing teams ranked by position in the race. Also included a table for the average current speed of boats.
 
 ![PowerBI Dashboard](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/vendee%20globe-dashboard.png?raw=true)
 
-## 12. Conclusion <a name="conclusion"></a>
+## 13. Conclusion <a name="conclusion"></a>
 Successfully set up a Lambda Architecture on Azure to process telemetry data from the Vendée Globe sailing boats. With real-time and batch processing, boat rankings, and a dynamic PowerBI dashboard. 
 This business case demonstrates the use of Azure technologies to process and visualize telemetry data from the Techionista Vendée Globe sailboat race. Boat ranking, real-time tracking, data cleaning, and data processing are key components of this solution.
 
