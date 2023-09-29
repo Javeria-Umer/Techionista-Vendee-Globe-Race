@@ -72,6 +72,8 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 - **Stream analytics:**
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20after%20job%20run.png?raw=true)
 
+<br> <!-- HTML line break for spacing -->
+
 - **Stream Analytics Input Table:**
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20table%20after%20job%20run.png?raw=true)
 
@@ -84,6 +86,10 @@ In the batch-processing path, utilized SQL functions to calculate boat rankings 
 Used SQL query to calculate the table of teams ranked by position in the race as well as the average speed of boats. Boat ranking utilizes the Haversine formula to calculate great-circle distances. It factors in latitude and longitude coordinates for accurate distance measurements. Boat positions are processed, allowing real-time ranking. Following query was used to calculate boat ranking and average speed:
 
 ![Boat Ranking](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20for%20boat%20ranking.png?raw=true)
+
+<br> <!-- HTML line break for spacing -->
+
+![Boat Ranking Table](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/rank%20table%20in%20develop%20window.png?raw=true)
 
 ## 11. PowerBI Dashboard <a name="powerbi-dashboard"></a>
 A PowerBI dashboard displays a world map with the current location of each racing team, along with a table showing teams ranked by position in the race. Also included a table for the average current speed of boats.
