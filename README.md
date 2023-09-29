@@ -15,7 +15,8 @@
 10. [Created External Table](#creating-external-table)
 11. [Calculated Boat Ranking](#calculating-boat-ranking)
 12. [PowerBI Dashboard](#powerbi-dashboard)
-13. [Conclusion](#conclusion)
+13. [Azure Resources Utilized](#azure-resources-utilized)
+14. [Conclusion](#conclusion)
 
 ## 1. Information about Vendée Globe <a name="information-about-vendée-globe"></a>
 The Vendée Globe is a solo non-stop round-the-world sailboat race known for its extreme challenges and tests of individual endurance. Founded by Philippe Jeantot in 1989, this race occurs every four years and attracts sailors from around the world. In the 9th edition, held in 2020-2021, French sailor Yannick Bestaven emerged victorious after a thrilling 80-day journey.
@@ -106,7 +107,11 @@ A PowerBI dashboard displays a world map with the current location of each racin
 
 ![PowerBI Dashboard](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/vendee%20globe-dashboard.png?raw=true)
 
-## 13. Conclusion <a name="conclusion"></a>
+## 13. Azure Resources Utilized
+
+![Resource Group](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/resource%20group.png?raw=true)
+
+## 14. Conclusion <a name="conclusion"></a>
 Successfully set up a Lambda Architecture on Azure to process telemetry data from the Vendée Globe sailing boats. With real-time and batch processing, boat rankings, and a dynamic PowerBI dashboard. 
 This business case demonstrates the use of Azure technologies to process and visualize telemetry data from the Techionista Vendée Globe sailboat race. Boat ranking, real-time tracking, data cleaning, and data processing are key components of this solution.
 
