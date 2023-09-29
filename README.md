@@ -1,68 +1,91 @@
 # Techionista Vendée Globe Business Case
 
 ## Table of Contents
-1. [Introduction](#introduction)
-2. [Challenge Overview](#challenge-overview)
-3. [Sailing Boat Simulator](#sailing-boat-simulator)
-4. [Data Cleaning](#data-cleaning)
-5. [Lambda Architecture](#lambda-architecture)
-   1. [Event Hub Configuration](#event-hub-configuration)
-   2. [Data Storage](#data-storage)
-   3. [PowerBI Dashboard](#powerbi-dashboard)
-6. [Boat Ranking](#boat-ranking)
-7. [Azure Resources Used](#azure-resources-used)
-8. [Conclusion](#conclusion)
+1. [Information about Vendée Globe](#information-about-vendée-globe)
+2. [Foreword](#foreword)
+3. [How to Create the Event Hub](#how-to-create-the-event-hub)
+4. [Getting Started - Python Simulator](#getting-started---python-simulator)
+   1. [Download and Configure the Python Sailing Simulator](#download-and-configure-the-python-sailing-simulator)
+   2. [Run the Python Sailing Simulator](#run-the-python-sailing-simulator)
+5. [Challenges](#challenges)
+6. [Lambda Architecture in Azure](#lambda-architecture-in-azure)
+7. [Stream Analytics Job](#stream-analytics-job)
+8. [Incoming Data After Running The Stream Analytics Job](#incoming-data-after-running-the-stream-analytics-job)
+9. [Data Storage and Processing](#data-storage-and-processing)
+10. [Calculating Boat Ranking](#calculating-boat-ranking)
+11. [PowerBI Dashboard](#powerbi-dashboard)
+12. [Conclusion](#conclusion)
 
-## Introduction <a name="introduction"></a>
-The Vendée Globe is an iconic solo non-stop round-the-world sailboat race. This business case involves processing telemetry data from racing boats during this challenging event using Microsoft Azure technologies.
+## 1. Information about Vendée Globe <a name="information-about-vendée-globe"></a>
+The Vendée Globe is a solo non-stop round-the-world sailboat race known for its extreme challenges and tests of individual endurance. Founded by Philippe Jeantot in 1989, this race occurs every four years and attracts sailors from around the world. In the 9th edition, held in 2020-2021, French sailor Yannick Bestaven emerged victorious after a thrilling 80-day journey.
 
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/2023-09-29%20Vendee%20globe%20route%20portugal%20map.png?raw=true)
 
-## Challenge Overview <a name="challenge-overview"></a>
-The challenge was to create a cloud-based Lambda Architecture on Azure to process telemetry data from sailing boats. This architecture should enable real-time data processing and batch processing for data collection and calculations.
+## 2. Foreword <a name="foreword"></a>
+The task was to take on the role of Nokia to build a cloud-based Lambda Architecture on Microsoft Azure. The goal was to process telemetry data from sailing boats in real-time and in batches by using various Azure services, including Event Hub, Stream Analytics, data lake, Synapse, and PowerBI, to achieve this.
 
-![Project Challenge](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/project%20challenge.png?raw=true)
+## 3. How to Create the Event Hub <a name="how-to-create-the-event-hub"></a>
+To start, created an Event Hub Namespace. Here are the steps:
+1. Created a free azure subscription.
+2. A new resource group was created to organize all Lambda Architecture resources.
+3. Configured Namespace for Event Hub by selecting the 'West Europe' region for proximity.
 
-## Sailing Boat Simulator <a name="sailing-boat-simulator"></a>
-Used a Python-based sailing boat simulator to generate telemetry data for representing the boats. Stream Analytics was used to ingest data from the simulator.
+![Configure Event Hub]()
+
+<br> <!-- HTML line break for spacing -->
+
+![Configure EventHub Namespace]()
+
+## 4. Getting Started - Python Simulator <a name="getting-started---python-simulator"></a>
+
+### 4.1 Download and Configure the Python Sailing Simulator <a name="download-and-configure-the-python-sailing-simulator"></a>
+Python sailing simulator was set up to send telemetry data every 60 seconds to our Event Hub. This involved downloading the simulator and configuring it:
+- **Download:** Downloaded the Python Sailing Simulator and installed Python on the local machine.
+- **Configuration:** Configured the simulator to use the connection string obtained from the Event Hub Namespace.
+
+### 4.2 Run the Python Sailing Simulator <a name="run-the-python-sailing-simulator"></a>
 
 ![Sailing Boat Simulator](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/simulator%20run.png?raw=true)
 
-## Data Cleaning <a name="data-cleaning"></a>
-Some garbled data was observed during the simulator run. To ensure data quality, data cleaning was performed before processing. The following query was used for data cleaning:
+## 5. Challenges <a name="challenges"></a>
+Challenges were to build the Lambda Architecture in Azure, storing and processing data, calculating boat rankings, and creating a PowerBI dashboard to visualize the race.
+
+![Project Challenge](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/project%20challenge.png?raw=true)
+
+## 6. Lambda Architecture in Azure <a name="lambda-architecture-in-azure"></a>
+
+- **Real-time Path:** Use Event Hub and Stream Analytics for real-time data processing.
+- **Batch Processing Path:** Batch-processing Path: Data is stored in Synapse Analytics Workspace with Serverless SQL Pool for batch processing.
+
+## 7. Stream Analytics Job <a name="stream-analytics-job"></a>
+With data flowing into the Event Hub, the next steps include running the stream analytics job.
+Some garbled data was observed during the simulator run. To ensure data quality, data cleaning was performed before processing and running the job. The following query was used for data cleaning:
 
 ![Data Cleaning Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20to%20clean%20data.png?raw=true)
 
-## Lambda Architecture <a name="lambda-architecture"></a>
-The Lambda Architecture includes:
-- **Event Hub Configuration:** Configured an Event Hub for the ingestion of simulator data.
+## 8. Incoming Data After Running The Stream Analytics Job <a name="incoming-data-after-running-the-stream-analytics-job"></a>
+Event-hub namespace:
 
-![Event Hub Configuration](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20input%20event%20hub.png?raw=true)
 
-- **Data Storage:** Data is stored in an Azure Data Lake for batch processing.
+<br> <!-- HTML line break for spacing -->
 
-![Data Storage](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20outputs.png?raw=true)
+Stream analytics:
 
-- **Batch Processing:** Synapse Analytics Workspace with Serverless SQL Pool is used for batch processing.
 
-![Batch Processing](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/synapse%20workspace%20after%20job%20run.png?raw=true)
+## 9. Data Storage and Processing <a name="data-storage-and-processing"></a>
+In the batch-processing path, utilized SQL functions to calculate boat rankings and average speed tables in Synapse analytics Workspace serverless SQL pool.
 
-- **PowerBI Dashboard:** PowerBI dashboard features a world map displaying boat positions during the race, a table ranking teams by their race positions, and a horizontal bar chart showcasing average boat speeds.
-
-![PowerBI Dashboard](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/vendee%20globe-dashboard.png?raw=true)
-
-## Boat Ranking <a name="boat-ranking"></a>
-Boat ranking utilizes the Haversine formula to calculate great-circle distances. It factors in latitude and longitude coordinates for accurate distance measurements. Boat positions are processed, allowing real-time ranking.
+## 10. Calculating Boat Ranking <a name="calculating-boat-ranking"></a>
+Used SQL query to calculate the table of teams ranked by position in the race as well as the average speed of boats. Boat ranking utilizes the Haversine formula to calculate great-circle distances. It factors in latitude and longitude coordinates for accurate distance measurements. Boat positions are processed, allowing real-time ranking. Following query was used to calculate boat ranking and average speed:
 
 ![Boat Ranking](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20for%20boat%20ranking.png?raw=true)
 
-## Azure Resources Used <a name="azure-resources-used"></a>
-The following Azure resources were used in this project:
-- Event Hub: For real-time data ingestion.
-- Azure Data Lake: For data storage.
-- Synapse Analytics Serverless SQL Pool: For batch processing.
-- Stream Analytics: For real-time boat location data from the simulator.
+## 11. PowerBI Dashboard <a name="powerbi-dashboard"></a>
+A PowerBI dashboard displays a world map with the current location of each racing team, along with a table showing teams ranked by position in the race. Also included a table for the average current speed of boats.
 
-## Conclusion <a name="conclusion"></a>
-This business case demonstrates the use of Azure technologies to process and visualize telemetry data from the Vendée Globe sailboat race. Boat ranking, real-time tracking, data cleaning, and data processing are key components of this solution.
+![PowerBI Dashboard](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/vendee%20globe-dashboard.png?raw=true)
+
+## 12. Conclusion <a name="conclusion"></a>
+Successfully set up a Lambda Architecture on Azure to process telemetry data from the Vendée Globe sailing boats. With real-time and batch processing, boat rankings, and a dynamic PowerBI dashboard. 
+This business case demonstrates the use of Azure technologies to process and visualize telemetry data from the Techionista Vendée Globe sailboat race. Boat ranking, real-time tracking, data cleaning, and data processing are key components of this solution.
 
