@@ -73,7 +73,7 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20after%20job%20run.png?raw=true)
 
 - **Stream Analytics Input Table:**
-
+![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20table%20after%20job%20run.png?raw=true)
 
 ## 9. Data Storage and Processing <a name="data-storage-and-processing"></a>
 In the batch-processing path, utilized SQL functions to calculate boat rankings and average speed tables in Synapse analytics Workspace serverless SQL pool.
