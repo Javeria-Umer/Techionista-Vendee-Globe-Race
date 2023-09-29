@@ -29,7 +29,7 @@ Used a Python-based sailing boat simulator to generate telemetry data for repres
 ![Sailing Boat Simulator](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/simulator%20run.png?raw=true)
 
 ## Data Cleaning <a name="data-cleaning"></a>
-To ensure data quality, data cleaning was performed before processing. Some garbled data was observed during the simulator run. The following query was used for data cleaning:
+Some garbled data was observed during the simulator run. To ensure data quality, data cleaning was performed before processing. The following query was used for data cleaning:
 
 ![Data Cleaning Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20to%20clean%20data.png?raw=true)
 
@@ -45,7 +45,7 @@ The Lambda Architecture includes:
 
 - **Batch Processing:** Synapse Analytics Workspace with Serverless SQL Pool is used for batch processing.
 
-![Batch Processing](image-reference-for-batch-processing.png)
+![Batch Processing](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/synapse%20workspace%20after%20job%20run.png?raw=true)
 
 - **PowerBI Dashboard:** PowerBI dashboard features a world map displaying boat positions during the race, a table ranking teams by their race positions, and a horizontal bar chart showcasing average boat speeds.
 
