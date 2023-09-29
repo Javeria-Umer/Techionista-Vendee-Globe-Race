@@ -41,7 +41,7 @@ The Lambda Architecture includes:
 
 - **Data Storage:** Data is stored in an Azure Data Lake for batch processing.
 
-![Data Storage](image-reference-for-data-storage.png)
+![Data Storage](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20outputs.png?raw=true)
 
 - **Batch Processing:** Synapse Analytics Workspace with Serverless SQL Pool is used for batch processing.
 
