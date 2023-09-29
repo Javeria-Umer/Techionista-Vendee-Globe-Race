@@ -1,4 +1,4 @@
-# Vendée Globe Business Case
+# Techionista Vendée Globe Business Case
 
 ## Table of Contents
 1. [Introduction](#introduction)
