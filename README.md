@@ -67,6 +67,8 @@ Challenges were to build the Lambda Architecture in Azure, storing and processin
 - **Real-time Path:** Use Event Hub and Stream Analytics for real-time data processing.
 - **Batch Processing Path:** Data is stored in Synapse Analytics Workspace with Serverless SQL Pool for batch processing.
 
+<br> <!-- HTML line break for spacing -->
+
 ## 7. Stream Analytics Job <a name="stream-analytics-job"></a>
 With data flowing into the Event Hub, the next steps include running the stream analytics job.
 Some garbled data was observed during the simulator run. To ensure data quality, data cleaning was performed before processing and running the job. The following query was used for data cleaning:
@@ -118,6 +120,7 @@ Used SQL query to calculate the table of teams ranked by position in the race as
 
 <br> <!-- HTML line break for spacing -->
 
+Ranking Table created after running the query:
 ![Boat Ranking Table](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/rank%20table%20in%20develop%20window.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
