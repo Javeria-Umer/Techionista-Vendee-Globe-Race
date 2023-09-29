@@ -3,7 +3,7 @@
 ## Table of Contents
 1. [Information about Vendée Globe](#information-about-vendée-globe)
 2. [Foreword](#foreword)
-3. [How to Create the Event Hub](#how-to-create-the-event-hub)
+3. [Created the Event Hub](#created-the-event-hub)
 4. [Getting Started - Python Simulator](#getting-started---python-simulator)
    1. [Download and Configure the Python Sailing Simulator](#download-and-configure-the-python-sailing-simulator)
    2. [Run the Python Sailing Simulator](#run-the-python-sailing-simulator)
@@ -24,7 +24,7 @@ The Vendée Globe is a solo non-stop round-the-world sailboat race known for its
 ## 2. Foreword <a name="foreword"></a>
 The task was to take on the role of Nokia to build a cloud-based Lambda Architecture on Microsoft Azure. The goal was to process telemetry data from sailing boats in real-time and in batches by using various Azure services, including Event Hub, Stream Analytics, data lake, Synapse, and PowerBI, to achieve this.
 
-## 3. How to Create the Event Hub <a name="how-to-create-the-event-hub"></a>
+## 3. Created the Event Hub <a name="how-to-create-the-event-hub"></a>
 To start, created an Event Hub Namespace. Here are the steps:
 1. Created a free azure subscription.
 2. A new resource group was created to organize all Lambda Architecture resources.
