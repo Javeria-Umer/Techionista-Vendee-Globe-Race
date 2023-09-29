@@ -24,7 +24,7 @@ The challenge was to create a cloud-based Lambda Architecture on Azure to proces
 ## Sailing Boat Simulator <a name="sailing-boat-simulator"></a>
 Used a Python-based sailing boat simulator to generate telemetry data for representing the boats. Stream Analytics was used to ingest data from the simulator.
 
-![Sailing Boat Simulator](image-reference-for-simulator.png)
+![Sailing Boat Simulator](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/simulator%20run.png?raw=true)
 
 ## Data Cleaning <a name="data-cleaning"></a>
 To ensure data quality, data cleaning was performed before processing. Some garbled data was observed during the simulator run. The following query was used for data cleaning:
