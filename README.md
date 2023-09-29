@@ -55,7 +55,7 @@ Challenges were to build the Lambda Architecture in Azure, storing and processin
 ## 6. Lambda Architecture in Azure <a name="lambda-architecture-in-azure"></a>
 
 - **Real-time Path:** Use Event Hub and Stream Analytics for real-time data processing.
-- **Batch Processing Path:** Batch-processing Path: Data is stored in Synapse Analytics Workspace with Serverless SQL Pool for batch processing.
+- **Batch Processing Path:** Data is stored in Synapse Analytics Workspace with Serverless SQL Pool for batch processing.
 
 ## 7. Stream Analytics Job <a name="stream-analytics-job"></a>
 With data flowing into the Event Hub, the next steps include running the stream analytics job.
