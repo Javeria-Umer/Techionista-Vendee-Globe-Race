@@ -34,11 +34,13 @@ To start, created an Event Hub Namespace. Here are the steps:
 2. A new resource group was created to organize all Lambda Architecture resources.
 3. Configured Namespace for Event Hub by selecting the 'West Europe' region for proximity.
 
-![Configure Event Hub]()
+<br> <!-- HTML line break for spacing -->
+
+![Create Namespace](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/configure%20event%20hub%20namespace.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
 
-![Configure EventHub Namespace]()
+![Create EventHub](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/configure%20event%20hub.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
 
@@ -121,6 +123,7 @@ Used SQL query to calculate the table of teams ranked by position in the race as
 <br> <!-- HTML line break for spacing -->
 
 Ranking Table created after running the query:
+
 ![Boat Ranking Table](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/rank%20table%20in%20develop%20window.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
