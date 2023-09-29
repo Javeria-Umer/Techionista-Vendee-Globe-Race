@@ -11,10 +11,11 @@
 6. [Lambda Architecture in Azure](#lambda-architecture-in-azure)
 7. [Stream Analytics Job](#stream-analytics-job)
 8. [Incoming Data After Running The Stream Analytics Job](#incoming-data-after-running-the-stream-analytics-job)
-9. [Data Storage and Processing](#data-storage-and-processing)
-10. [Calculating Boat Ranking](#calculating-boat-ranking)
-11. [PowerBI Dashboard](#powerbi-dashboard)
-12. [Conclusion](#conclusion)
+9. [Data Storage and Batch Processing](#data-storage-and-batch-processing)
+10. [Creating External Table](#creating-external-table)
+11. [Calculating Boat Ranking](#calculating-boat-ranking)
+12. [PowerBI Dashboard](#powerbi-dashboard)
+13. [Conclusion](#conclusion)
 
 ## 1. Information about Vendée Globe <a name="information-about-vendée-globe"></a>
 The Vendée Globe is a solo non-stop round-the-world sailboat race known for its extreme challenges and tests of individual endurance. Founded by Philippe Jeantot in 1989, this race occurs every four years and attracts sailors from around the world. In the 9th edition, held in 2020-2021, French sailor Yannick Bestaven emerged victorious after a thrilling 80-day journey.
@@ -77,15 +78,20 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 - **Stream Analytics Input Table:**
 ![](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/stream%20analytics%20table%20after%20job%20run.png?raw=true)
 
-## 9. Data Storage and Processing <a name="data-storage-and-processing"></a>
-In the batch-processing path, utilized SQL functions to calculate boat rankings and average speed tables in Synapse analytics Workspace serverless SQL pool.
+## 9. Data Storage and Batch Processing <a name="data-storage-and-processing"></a>
+Synapse analytics Workspace in serverless SQL pool and Data lake is used for batch processing.
 
 ![Synapse Workspace container after job run](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/synapse%20workspace%20after%20job%20run.png?raw=true)
+
+## 10. Creating External Table <a name="creating-external-table"></a>
+Following query was used to create external table in Synapse serverless SQL Pool:
+
+![External Table Query](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/ext.%20table%20after%20query%20run.png?raw=true)
 
 ## 10. Calculating Boat Ranking <a name="calculating-boat-ranking"></a>
 Used SQL query to calculate the table of teams ranked by position in the race as well as the average speed of boats. Boat ranking utilizes the Haversine formula to calculate great-circle distances. It factors in latitude and longitude coordinates for accurate distance measurements. Boat positions are processed, allowing real-time ranking. Following query was used to calculate boat ranking and average speed:
 
-![Boat Ranking](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20for%20boat%20ranking.png?raw=true)
+![Query For Boat Ranking](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/query%20for%20boat%20ranking.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
 
