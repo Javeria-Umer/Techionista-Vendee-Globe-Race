@@ -29,7 +29,7 @@ The Vendée Globe is a solo non-stop round-the-world sailboat race known for its
 ## 2. Foreword <a name="foreword"></a>
 The task was to take on the role of Nokia to build a cloud-based Lambda Architecture on Microsoft Azure. The goal was to process telemetry data from sailing boats in real-time and in batches by using various Azure services, including Event Hub, Stream Analytics, data lake, Synapse, and PowerBI, to achieve this.
 
-## 3. Created the Event Hub <a name="how-to-create-the-event-hub"></a>
+## 3. Created the Event Hub <a name="created-the-event-hub"></a>
 To start, created an Event Hub Namespace. Here are the steps:
 1. Created a free azure subscription.
 2. A new resource group was created to organize all Lambda Architecture resources.
@@ -72,7 +72,7 @@ Challenges were to build the Lambda Architecture in Azure, storing and processin
 
 <br> <!-- HTML line break for spacing -->
 
-## 7. Configured Stream Analytics Outputs
+## 7. Configured Stream Analytics Outputs <a name="configured-stream-analytics-outputs"></a>
 - **PowerBI:**
 
 <br> <!-- HTML line break for spacing -->
@@ -113,7 +113,7 @@ Some garbled data was observed during the simulator run. To ensure data quality,
 
 <br> <!-- HTML line break for spacing -->
 
-## 10. Data Storage and Batch Processing <a name="data-storage-and-processing"></a>
+## 10. Data Storage and Batch Processing <a name="data-storage-and-batch-processing"></a>
 Synapse analytics Workspace in serverless SQL pool and Data lake is used for batch processing.
 
 ![Synapse Workspace container after job run](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/synapse%20workspace%20after%20job%20run.png?raw=true)
@@ -153,7 +153,7 @@ A PowerBI dashboard displays a world map with the current location of each racin
 
 <br> <!-- HTML line break for spacing -->
 
-## 14. Azure Resources Utilized
+## 14. Azure Resources Utilized <a name="azure-resources-utilized"></a>
 
 ![Resource Group](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/resource%20group.png?raw=true)
 
