@@ -149,7 +149,7 @@ Ranking Table created after running the query:
 ## 13. PowerBI Dashboard <a name="powerbi-dashboard"></a>
 A PowerBI dashboard displays a world map with the current location of each racing team, along with a table showing teams ranked by position in the race. Also included a table for the average current speed of boats.
 
-![PowerBI Dashboard](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/vendee%20globe-dashboard.png?raw=true)
+![PowerBI Dashboard](https://github.com/Javeria-Umer/Techionista-Vendee-Globe-Race/blob/main/Techionista%20Vendee%20Globe%20Race.png?raw=true)
 
 <br> <!-- HTML line break for spacing -->
 
